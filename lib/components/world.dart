@@ -39,7 +39,7 @@ class World extends StatelessWidget {
               SummaryCard(
                 total: data.world.deaths,
                 label: 'Meninggal',
-                color: Colors.red[300],
+                color: Colors.red[800],
                 size: 20,
               ),
             ],

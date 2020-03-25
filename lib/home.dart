@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import 'metacolor/warna.dart' as warna;
 import 'components/indonesi.dart';
 import 'components/world.dart';
 import 'provider/corona_provider.dart';
@@ -14,8 +14,8 @@ class Home extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pinkAccent,
-        title: const Text('Lawan COVID-19 - [Taufiq Jack]'),
+        backgroundColor: warna.MetacolorsColors.warm_pink,
+        title: const Text('Lawan COVID-19 | [TaufiqJackDev]'),
       ),
       //PENERAPAN REFRESH INDICATOR AGAR KETIKA LAYAR DITARIK DARI ATAS KE BAWAH, MAKA SECARA OTOMATIS AKAN MELOAD DATA BARU
       body: RefreshIndicator(
@@ -24,7 +24,8 @@ class Home extends StatelessWidget {
         onRefresh: () =>
             Provider.of<CoronaProvider>(context, listen: false).getData(),
         child: Container(
-          margin: const EdgeInsets.all(10),
+          color: warna.MetacolorsColors.white_two,
+          margin: const EdgeInsets.all(0),
           //KEMUDIAN KETIKA APPS DIBUKA, MAKA FUNGSI FUTURE BUILDER AKAN DIJALANKAN
           child: FutureBuilder(
             //DAN MELOAD DATA DARI API MENGGUNAKAN FUNGSI YANG SAMA

@@ -56,7 +56,7 @@ class Indonesia extends StatelessWidget {
               SummaryCard(
                 total: data.summary.deaths.toString(),
                 label: 'Meninggal',
-                color: Colors.red[300],
+                color: Colors.red[800],
                 size: 35,
               ),
             ],

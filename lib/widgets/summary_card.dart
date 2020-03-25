@@ -33,7 +33,7 @@ class SummaryCard extends StatelessWidget {
           //DAN YANG KEDUA ADALAH LABEL DATA
           Text(
             label,
-            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15,),
           )
         ],
       ),
